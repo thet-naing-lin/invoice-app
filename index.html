@@ -2,9 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invoice App</title>
+    <link rel="icon" href="./public/gift-voucher.png" />
+    <!-- Primary Meta Tags -->
+    <title>Invoice Application</title>
+    <meta name="title" content="Invoice Application" />
+    <meta
+      name="description"
+      content="You can add new products and print the voucher."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mms-it.com/" />
+    <meta property="og:title" content="Invoice Application" />
+    <meta
+      property="og:description"
+      content="You can add new products and print the voucher."
+    />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/D560BAQFeaNVeGf3DVg/company-logo_200_200/0/1708068415251/mms_it_logo?e=1727308800&v=beta&t=-GlUlcOPrkD0y6Zk2ggQEeBFWVhv3vd9EU4ZgX_eqOY"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://mms-it.com/" />
+    <meta property="twitter:title" content="Invoice Application" />
+    <meta
+      property="twitter:description"
+      content="You can add new products and print the voucher."
+    />
+    <meta
+      property="twitter:image"
+      content="https://media.licdn.com/dms/image/D560BAQFeaNVeGf3DVg/company-logo_200_200/0/1708068415251/mms_it_logo?e=1727308800&v=beta&t=-GlUlcOPrkD0y6Zk2ggQEeBFWVhv3vd9EU4ZgX_eqOY"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
     <main id="id" class="flex flex-col h-screen">
@@ -77,7 +111,12 @@
                   <th scope="col" class="px-6 py-3 text-end">Price</th>
                   <th scope="col" class="px-6 py-3 text-end">Quantity</th>
                   <th scope="col" class="px-6 py-3 text-end">Cost</th>
-                  <th scope="col" class="px-6 py-3 text-end table-cell print:hidden">Action</th>
+                  <th
+                    scope="col"
+                    class="px-6 py-3 text-end table-cell print:hidden"
+                  >
+                    Action
+                  </th>
                 </tr>
               </thead>
               <tbody id="recordGroup">
