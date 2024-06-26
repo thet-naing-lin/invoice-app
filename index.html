@@ -327,9 +327,14 @@
       </footer>
       <!-- Sidebar New item template -->
       <template id="productCardTemplate">
-        <div class="product-card border rounded flex justify-between p-3">
+        <div class="product-card border rounded flex justify-between p-3 group">
           <h3 class="product-name"></h3>
-          <p><span class="product-price"></span> mmk</p>
+          <p class="group-hover:hidden"><span class="product-price"></span> mmk</p>
+          <button
+              class="product-remove hidden group-hover:inline-block font-medium text-blue-600 dark:text-blue-500 active:scale-90"
+            >
+              Remove
+            </button>
         </div>
       </template>
       <!-- choosing product template -->

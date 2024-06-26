@@ -4,7 +4,7 @@ import { products } from "./states";
 
 const initialRender = () => {
   // show product side bar
-//   productSideBar.classList.remove("translate-x-full");
+  // productSideBar.classList.remove("translate-x-full");
   productRender(products);
 };
 

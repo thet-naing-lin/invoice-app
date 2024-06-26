@@ -71,7 +71,7 @@ export const createRecordRow = ({ id, name, price }, quantity) => {
 
   // ရောင်းလိုက်တဲ့ product ကိုသိရအောင် product-id ထည့်လိုက်မယ်။
   currentRecordRow.setAttribute("product-id", id);
-  // remove လုပ်တဲ့ချိန်သုံးဖို့ id ထည့်မယ်။
+  // remove လုပ်တဲ့ချိန်သုံးဖို့ row-id ထည့်မယ်။
   currentRecordRow.setAttribute("row-id", uuidv4());
 
   recordProductName.innerText = name;
