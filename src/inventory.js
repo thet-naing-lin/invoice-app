@@ -89,6 +89,23 @@ export const removeProduct = (productRowId) => {
         `[side-bar-row-id="${productRowId}"]`
       );
       currentProductRow.remove();
+
+      console.log(currentProductRow.id);
+
+      for (let i = 1; i < productSelect.children.length; i++) {
+        if (currentProductRow.id === productSelect.children[i].value) {
+          const currentProductSelect = productSelect.querySelector(
+            `[value="${productSelect.children[i].value}"]`
+          );
+          currentProductSelect.remove();
+        }
+      }
+
+      // products = products.filter(
+      //   (product) => product.id !== parseInt(currentProductRow.id)
+      // );
+
+      // console.log(products);
     }
   });
 };
@@ -101,20 +118,3 @@ export const productGroupHandler = (event) => {
     removeProduct(currentProductRow.getAttribute("side-bar-row-id"));
   }
 };
-
-// export const productGroupObserver = () => {
-//   const observerOptions = {
-//     childList: true,
-//     subtree: true,
-//   };
-
-//   const updateProducts = (products) => {
-//     products.forEach(({ id, name, price }) => {
-//       productGroup.append(createNewProductCard(id, name, price));
-//       productSelect.append(new Option(`${name} - ${price} mmk`, id));
-//     });
-//   };  
-
-//   const observer = new MutationObserver(updateProducts);
-//   observer.observe(productGroup, observerOptions);
-// }
